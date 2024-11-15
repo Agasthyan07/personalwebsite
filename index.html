@@ -4,28 +4,104 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Coming Soon</title>
-<!-- Link to FontAwesome for social media icons -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-<!-- Google Font -->
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
-<!-- Stylesheet -->
+<!-- Link to FontAwesome CDN for icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<style>
+  /* Body Styling */
+  body {
+    background: #00091B;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+  }
 
+  /* Fade-in Animation */
+  @keyframes fadeIn {
+    from {top: 20%; opacity: 0;}
+    to {top: 50%; opacity: 1;}
+  }
 
-   
-    <link rel="stylesheet" href="style.css">
-   
-    <title>Agasthyan</title>
-    <style></style>
-  </head>
-  <body>
-    <div class="wrapper">
-  <h1>coming soon<span class="dot">.</span></h1>
-  <p>.</p>
-  <div class="icons">
-    <a href=""><i class="fa fa-linkedin"></i></a>
-    <a href=""><i class="fa fa-instagram"></i></a>
-   
+  @-webkit-keyframes fadeIn {
+    from {top: 20%; opacity: 0;}
+    to {top: 50%; opacity: 1;}
+  }
+
+  /* Wrapper Styling */
+  .wrapper {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    animation: fadeIn 1000ms ease;
+    -webkit-animation: fadeIn 1000ms ease;
+    text-align: center;
+  }
+
+  /* Heading Styling */
+  h1 {
+    font-size: 50px;
+    font-weight: 700;
+    margin-bottom: 0;
+    line-height: 1;
+  }
+
+  .dot {
+    color: #4FEBFE; /* Light Blue dot color */
+  }
+
+  /* Paragraph Styling */
+  p {
+    text-align: center;
+    margin: 18px;
+    font-family: 'Muli', sans-serif;
+    font-weight: normal;
+  }
+
+  /* Social Icons Container */
+  .icons {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  /* Icon Styling */
+  .icons a {
+    color: #00091B;
+    background: #fff;
+    height: 15px;
+    width: 15px;
+    padding: 13px;
+    margin: 0 10px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    display: inline-block;
+    transition: all 200ms ease;
+    text-decoration: none;
+  }
+
+  /* Icon Hover Effect */
+  .icons a:hover {
+    color: #fff;
+    background: none;
+    transform: scale(1.2);
+    cursor: pointer;
+  }
+</style>
+</head>
+<body>
+  <div class="wrapper">
+    <h1>coming soon<span class="dot">.</span></h1>
+    <p>Put some text here.</p>
+    <div class="icons">
+      <a href="https://twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+      <a href="https://youtube.com" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+      <a href="https://telegram.org" target="_blank"><i class="fa-brands fa-telegram"></i></a>
+    </div>
   </div>
- </div>
-  </body>
+</body>
 </html>
