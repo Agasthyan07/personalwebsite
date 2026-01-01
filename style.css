@@ -1,77 +1,108 @@
-body {
-  background: #00091B;
-  color: #fff;
-}
-
-
-@keyframes fadeIn {
-  from {top: 20%; opacity: 0;}
-  to {top: 100; opacity: 1;}
-  
-}
-
-@-webkit-keyframes fadeIn {
-  from {top: 20%; opacity: 0;}
-  to {top: 100; opacity: 1;}
-  
-}
-
-.wrapper {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  -webkit-transform: translate(-50%, -50%);
-  animation: fadeIn 1000ms ease;
-  -webkit-animation: fadeIn 1000ms ease;
-  
-}
-
-h1 {
-  font-size: 50px;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
-  margin-bottom: 0;
-  line-height: 1;
-  font-weight: 700;
 }
 
-.dot {
-  color: #4FEBFE;
+body {
+  background: #0f0f1a;
+  color: #eaeaff;
+  line-height: 1.6;
+  padding: 20px;
 }
 
-p {
+/* HERO */
+.hero {
   text-align: center;
-  margin: 18px;
-  font-family: 'Muli', sans-serif;
-  font-weight: normal;
-  
+  padding: 60px 20px;
 }
 
-.icons {
-  text-align: center;
-  
+.hero h1 {
+  font-size: 3rem;
+  color: #7f5af0;
 }
 
-.icons i {
-  color: #00091B;
-  background: #fff;
-  height: 15px;
-  width: 15px;
-  padding: 13px;
+.tagline {
+  margin-top: 10px;
+  color: #a1a1ff;
+}
+
+.links {
+  margin-top: 20px;
+}
+
+.links a {
   margin: 0 10px;
-  border-radius: 50px;
-  border: 2px solid #fff;
-  transition: all 200ms ease;
   text-decoration: none;
-  position: relative;
+  color: #fff;
+  padding: 8px 16px;
+  border: 1px solid #7f5af0;
+  border-radius: 20px;
+  transition: all 0.3s ease;
 }
 
-.icons i:hover, .icons i:active {
+.links a:hover {
+  background: #7f5af0;
+}
+
+/* CARDS */
+.card {
+  background: #161625;
+  margin: 20px auto;
+  max-width: 900px;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+.card h2 {
+  margin-bottom: 15px;
+  color: #7f5af0;
+}
+
+.card ul li {
+  margin-bottom: 10px;
+}
+
+.card span {
+  display: block;
+  font-size: 0.9rem;
+  color: #b3b3ff;
+}
+
+/* SKILLS */
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skills span {
+  background: #23233a;
+  padding: 8px 14px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  border: 1px solid #7f5af0;
+}
+
+/* PROJECTS */
+.project {
+  margin-bottom: 20px;
+}
+
+.project h3 {
   color: #fff;
-  background: none;
-  cursor: pointer !important;
-  transform: scale(1.2);
-  -webkit-transform: scale(1.2);
-  text-decoration: none;
-  
+}
+
+.highlight {
+  color: #2cb67d;
+  font-weight: 600;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  margin-top: 40px;
+  color: #888;
 }
