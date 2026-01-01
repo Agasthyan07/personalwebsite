@@ -1,107 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Coming Soon</title>
-<!-- Link to FontAwesome CDN for icons -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-<style>
-  /* Body Styling */
-  body {
-    background: #00091B;
-    color: #fff;
-    font-family: 'Poppins', sans-serif;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    overflow: hidden;
-  }
-
-  /* Fade-in Animation */
-  @keyframes fadeIn {
-    from {top: 20%; opacity: 0;}
-    to {top: 50%; opacity: 1;}
-  }
-
-  @-webkit-keyframes fadeIn {
-    from {top: 20%; opacity: 0;}
-    to {top: 50%; opacity: 1;}
-  }
-
-  /* Wrapper Styling */
-  .wrapper {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    animation: fadeIn 1000ms ease;
-    -webkit-animation: fadeIn 1000ms ease;
-    text-align: center;
-  }
-
-  /* Heading Styling */
-  h1 {
-    font-size: 50px;
-    font-weight: 700;
-    margin-bottom: 0;
-    line-height: 1;
-  }
-
-  .dot {
-    color: #4FEBFE; /* Light Blue dot color */
-  }
-
-  /* Paragraph Styling */
-  p {
-    text-align: center;
-    margin: 18px;
-    font-family: 'Muli', sans-serif;
-    font-weight: normal;
-  }
-
-  /* Social Icons Container */
-  .icons {
-    text-align: center;
-    margin-top: 20px;
-  }
-
-  /* Icon Styling */
-  .icons a {
-    color: #00091B;
-    background: #fff;
-    height: 15px;
-    width: 15px;
-    padding: 13px;
-    margin: 0 10px;
-    border-radius: 50%;
-    border: 2px solid #fff;
-    display: inline-block;
-    transition: all 200ms ease;
-    text-decoration: none;
-  }
-
-  /* Icon Hover Effect */
-  .icons a:hover {
-    color: #fff;
-    background: none;
-    transform: scale(1.2);
-    cursor: pointer;
-  }
-</style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Agasthyan B | Portfolio</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div class="wrapper">
-    <h1>coming soon<span class="dot">.</span></h1>
-    <p>Put some text here.</p>
-    <div class="icons">
-      <a href="https://www.linkedin.com/in/agasthyan-b-20612b201/" target="_blank"><i class="fa-brands linkedin"></i></a>
-      <a href="https://instagram.com/agasthyan_07" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-      
+
+  <header class="hero">
+    <h1>Agasthyan B</h1>
+    <p class="tagline">Computer Science Engineer • AI/ML • Web</p>
+
+    <div class="links">
+      <a href="https://github.com/Agasthyan07" target="_blank">GitHub</a>
+      <a href="https://linkedin.com/in/agasthyanb2002" target="_blank">LinkedIn</a>
+      <a href="mailto:agasthyan2002@gmail.com">Email</a>
     </div>
-  </div>
+  </header>
+
+  <section class="card">
+    <h2>🎓 Education</h2>
+    <ul>
+      <li>
+        <strong>M.Tech CSE</strong> – TKM College of Engineering  
+        <span>SGPA: 7.91 (2024–Present)</span>
+      </li>
+      <li>
+        <strong>B.Tech CSE</strong> – College of Engineering Attingal  
+        <span>CGPA: 6.89 (2020–2024)</span>
+      </li>
+      <li>
+        <strong>Higher Secondary</strong> – KRGPM HSS  
+        <span>95%</span>
+      </li>
+    </ul>
+  </section>
+
+  <section class="card">
+    <h2>🛠 Skills</h2>
+    <div class="skills">
+      <span>Java</span>
+      <span>Python</span>
+      <span>HTML</span>
+      <span>CSS</span>
+      <span>SQL</span>
+      <span>Machine Learning</span>
+      <span>AI</span>
+      <span>Git</span>
+      <span>LaTeX</span>
+      <span>VS Code</span>
+      <span>Eclipse</span>
+    </div>
+  </section>
+
+  <section class="card">
+    <h2>🚀 Projects</h2>
+
+    <div class="project">
+      <h3>Explainable AI-Generated Text Detection (Malayalam)</h3>
+      <p>
+        Transformer-based system to detect AI-generated Malayalam product reviews.
+        Integrated LIME for word-level explainability.
+      </p>
+      <span class="highlight">Accuracy: 93%</span>
+    </div>
+
+    <div class="project">
+      <h3>Deepfake Detection Analysis Tool</h3>
+      <p>
+        Used ResNeXt, MesoNet, and ensemble models with CLAHE preprocessing
+        for robust deepfake image detection.
+      </p>
+    </div>
+  </section>
+
+  <section class="card">
+    <h2>💼 Experience</h2>
+    <p>
+      <strong>Team Lead – College Website Development</strong><br>
+      Led development and modernization of official college websites,
+      placement cell portal, and tech-cultural fest website.
+    </p>
+  </section>
+
+  <footer>
+    <p>⚡ Built by Agasthyan B • Hosted on GitHub Pages</p>
+  </footer>
+
 </body>
 </html>
